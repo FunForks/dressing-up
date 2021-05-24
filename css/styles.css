@@ -1,0 +1,129 @@
+:root {
+  --doll-width: 42vmin;
+  --doll-height: 75vmin;
+
+  --dress-width: 10vmin;
+  --dress-height: 15vmin;
+  --dress-margin: 1.5vmin;
+
+  --opacity: 0.9;
+  --bgColor: rgba(255,255,255,var(--opacity));
+}
+
+/* BACKGROUND */
+/* Create a background with two images:
+   * a semi-opaque white linear "gradient"
+   * a JPG image
+   This gives a washed-out version of the JPG image
+*/
+
+main {
+  background:
+    linear-gradient(
+      0deg,
+      var(--bgColor),
+      var(--bgColor)
+    ),
+    url("../img/mannequins.jpg")
+  ;
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* DOLL */
+
+div#doll {
+  position: relative;
+  width: var(--doll-width);
+  height: var(--doll-height);
+  margin: auto;
+  /* background-color: #fee; */
+}
+
+#dress {
+	width: 60%;
+  height: 50%;
+  margin: 80% 20%;
+}
+
+
+.chosen {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+img {
+  width: 100%;
+}
+
+/* WARDROBE*/
+
+.wardrobe {
+  text-align: center;
+}
+
+#dresses {
+  display: inline-block;
+}
+
+#dresses img {
+  display: inline-block;
+  width: var(--dress-width);
+  height: var(--dress-height);
+  margin: var(--dress-margin);
+}
+
+
+/* Dress colours */
+.red {
+  background-color: red;
+}
+
+
+.orange {
+  background-color: orange;
+}
+
+
+.yellow {
+  background-color: yellow;
+}
+
+
+.green {
+  background-color: green;
+}
+
+
+.cyan {
+  background-color: cyan;
+}
+
+
+.blue {
+  background-color: blue;
+}
+
+
+.purple {
+  background-color: purple;
+}
+
+
+.violet {
+  background-color: violet;
+}
+
+/* INSTRUCTIONS */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  font-size: 5vw;
+
+}
